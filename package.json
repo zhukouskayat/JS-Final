@@ -1,0 +1,26 @@
+{
+  "name": "js-final",
+  "version": "1.0.0",
+  "description": "LinguaLand website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhukouskayat/JS-Final.git"
+  },
+  "author": "Zhukouskaya Tatsiana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhukouskayat/JS-Final/issues"
+  },
+  "homepage": "https://github.com/zhukouskayat/JS-Final#readme",
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "2.1.2"
+  }
+}
