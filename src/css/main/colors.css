@@ -1,0 +1,30 @@
+#banner,
+#info {
+  background-color: var(--background-color);
+}
+
+#banner span {
+  color: #59459C;
+}
+
+#banner button,
+#book button {
+  color: var(--font-button-color);
+  background-color: var(--background-button-color);
+}
+
+.fa-globe {
+  color: #E0A47C;
+}
+
+.fa-headset {
+  color: #59459C;
+}
+
+.fa-percent {
+  color:  #E0206E;
+}
+
+.fa-dollar-sign {
+  color: #0E98AF;
+}

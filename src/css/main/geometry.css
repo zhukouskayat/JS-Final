@@ -1,0 +1,162 @@
+#banner,
+#book,
+#info {
+  padding: var(--padding-body);
+}
+
+#banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#banner>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#banner img {
+  margin: 50px 0px;
+}
+
+#banner h1 {
+  margin-top: var(--margin-top-h1);
+  margin-bottom: 30px;
+}
+
+#banner form>button {
+  position: absolute;
+  bottom: 50px;
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--button-border-radius);
+}
+
+#banner>div:last-child {
+  margin: 50px 0px 50px auto;
+}
+
+#book h1 {
+  margin-top: var(--margin-top-h1);
+  margin-bottom: 50px;
+}
+
+#book>form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#book>form>select {
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--button-border-radius);
+  border: var(--form-border);
+  padding-left: 10px;
+}
+
+#book>form>button {
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--button-border-radius);
+  margin-bottom: 50px;
+}
+
+#book>div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.text-col1,
+.text-col2 {
+  width: 50%;
+}
+
+.fa-dollar-sign {
+  width: 18px;
+  margin-left: 4px;
+}
+
+.text-col1>p:first-child,
+.text-col2>p:first-child {
+  margin-bottom: 15px;
+}
+
+#info h2 {
+  padding: 50px 0px 30px 0px;
+}
+
+#info p:last-child {
+  padding-bottom: 50px;
+}
+
+
+@media screen and (max-width: 1400px) {
+
+  #banner,
+  #book,
+  #info {
+    padding: 0px 100px;
+  }
+
+  #book>form>select {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+  #banner>div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #banner img {
+    display: none;
+  }
+
+  #banner form>button {
+    position: static;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #banner,
+  #book,
+  #info {
+    padding: 0px 50px;
+  }
+
+  #banner form>button {
+    width: 100%;
+  }
+
+  #book>form {
+    flex-direction: column;
+  }
+
+  #book>form>select {
+    width: 100%;
+  }
+
+  #book>form>button {
+    width: 100%;
+  }
+
+  .text-col1,
+  .text-col2 {
+    width: 100%;
+  }
+
+  .text-col1 {
+    margin-bottom: 15px;
+  }
+}

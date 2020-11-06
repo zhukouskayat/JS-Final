@@ -1,0 +1,28 @@
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+#banner p,
+#book p {
+  font-size: var(--font-size-p-big);
+}
+
+#banner span {
+  font-weight: var(--font-weight);
+}
+
+#banner button,
+#book select,
+#book button {
+  font-size: var(--font-size-button);
+}
+
+#info h2 {
+font-size: var(--font-size-h2);
+font-weight: var(--font-weight);
+}
+
+#info p {
+  font-size: var(--font-size-p-medium);
+  text-align: justify;
+}

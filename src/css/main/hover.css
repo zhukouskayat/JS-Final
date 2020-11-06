@@ -1,0 +1,9 @@
+#banner button:hover,
+#book button:hover {
+  cursor: pointer;
+  background-color: var(--background-hover-button-color);
+}
+
+#book select {
+  cursor: pointer;
+}
