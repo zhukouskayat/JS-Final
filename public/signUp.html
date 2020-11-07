@@ -4,57 +4,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../src/fonts/fontawesome/all.css">
+  <link rel="stylesheet" href="../src/fonts/fontawesome/css/all.css">
   <link rel="stylesheet" href="../src/css/reset.css" />
   <link rel="stylesheet" href="../src/css/root.css" />
-  <link rel="stylesheet" href="../src/css/signUp/geometry.css" />
-  <link rel="stylesheet" href="../src/css/signUp/colors.css" />
-  <link rel="stylesheet" href="../src/css/signUp/fonts.css" />
+  <link rel="stylesheet" href="../src/css/signUp/styles.css" />
   <title>LinguaLand</title>
 </head>
 
 <body>
-  <div id="login">
-    <a href="index.html"><img id="logo" src="../src/illustrations/logo-signIn.svg" alt="logo" /></a>
-  </div>
-    <h1>
-      Create your personal account
-    </h1>
-      <form method="POST" id="form">
-        <div id="name">
-          <label class="name">
-            Name
-          </label>
-          <input type="text">
-        </div>
-        <div id="email">
-          <label class="email">
-            Email
-          </label>
-          <input type="email">
-        </div>
-        <div id="password">
-          <label class="password">
-            Password
-          </label>
-          <input type="password">
-        </div>
-        <div id="password">
-          <label class="password">
-            Repeat password
-          </label>
-          <input type="password">
-        </div>
-        <button type="button">
-          Create account
-        </button>
-      </form>
-    <p>
+  <div class="container">
+    <div id="login">
+      <a href="index.html"><img id="logo" src="../src/illustrations/logo.svg" alt="logo" /></a>
+    </div>
+    <div class="header">
+      <h1>Create Account</h1>
+    </div>
+    <form class="form" id="form" method="post">
+      <div class="form-control">
+        <label>Username</label>
+        <input type="text" placeholder="user123" id="username" name="Username">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label>Email</label>
+        <input type="text" placeholder="hello@gmail.com" id="email" name="Email">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label>Password</label>
+        <input type="password" id="password" autocomplete=​"new-password" name="Password">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label>Password check</label>
+        <input type="password" id="password2" name="Password check" autocomplete=​"new-password">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <button id="button">Submit</button>
+    </form>
+    <p class="signin">
       Do you have an account? <span>Sign in</span>
     </p>
     <p class="back">
       <a href="index.html"><i class="fas fa-chevron-left"></i>Back to the website</a>
     </p>
+  </div>
+
+    <script type="module">
+      import { button } from '../src/js/signUp/validation.js'
+      button();
+      import { sub } from '../src/js/signUp/printObject.js'
+      sub(document);
+    </script>
+
 </body>
 
 </html>
