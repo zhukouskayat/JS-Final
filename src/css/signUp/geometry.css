@@ -4,15 +4,16 @@
 }
 
 #logo {
-  width: 80%;
+  width: 70%;
 }
 
-h1 {
-  margin-bottom: 5px;
+#login a {
+  padding: 0px;
+  margin: 30px auto;
 }
 
 a {
-  padding: 20px 0px;
+  padding: 30px 0px 50px 0px;
   margin: auto;
 }
 
@@ -29,7 +30,8 @@ h1 {
 }
 
 #email,
-#password {
+#password,
+#name {
   margin: auto;
   position: relative;
   display: flex;
@@ -45,14 +47,15 @@ h1 {
 }
 
 .email,
-.password {
+.password,
+.name {
   position: absolute;
-  top: 20px;
+  top: 15px;
 }
 
 input {
   width: 100%;
-  margin: 60px auto 0px auto;
+  margin: 50px auto 0px auto;
   padding-left: 10px;
   height: var(--button-height);
   border-radius: var(--button-border-radius);
@@ -60,8 +63,8 @@ input {
 }
 
 button {
-  margin: 70px auto 50px auto;
-  padding: 0px 0px;
+  margin: 50px auto 50px auto;
+  padding: 0px 10px;
   width: 460px;
   height: var(--button-height);
   border-radius: var(--button-border-radius);
@@ -88,6 +91,7 @@ span {
 
   #email,
   #password,
+  #name,
   button {
     width: 100%;
   }
