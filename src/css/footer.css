@@ -103,6 +103,15 @@ select:hover,
     justify-content: center;
   }
 
+  .footer-col1, 
+  .footer-col2 {
+    display: none;
+  }
+
+  .footer-col3 {
+    width: 100%;
+  }
+
   #footer select {
     width: 100%;
   }
