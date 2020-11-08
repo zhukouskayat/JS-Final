@@ -19,17 +19,17 @@
 
 #subscribe button {
   position: absolute;
-  top: 15px;
-  right: 5px;
+  top: 13px;
+  right: 25px;
 }
 
-.email {
+#subscribe>div>form .email {
   border: var(--form-border);
   border-radius: var(--button-border-radius);
   height: var(--button-height);
-  width: 100%;
   margin-bottom: 30px;
-  padding-left: 15px;
+  padding:  0px 15px;
+  width: 93%;
 }
 
 /* Colors */
@@ -70,6 +70,7 @@ button:hover {
 @media screen and (max-width: 1400px) {
   #subscribe {
     padding: 0px 100px;
+    justify-content: center;
   }
 }
 
@@ -77,7 +78,17 @@ button:hover {
   #subscribe {
     padding: 0px 50px;
     justify-content: center;
+  }
 
+  #subscribe>div>form .email {
+    display: flex;
+  }
+
+  #subscribe>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
 
   #subscribe img {
