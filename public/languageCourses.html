@@ -66,73 +66,56 @@
     <div id="content-midle">
       <div id="content-left">
         <h2>
-          Search school
+          Filter language
         </h2>
-        <form method="POST">
-          <select class="age">
-            <option selected value="Adult">Adult (16+)</option>
-            <option value="Children">Children (4-16)</option>
-            <option value="Family program">Family program</option>
-          </select>
-          <select class="language">
-            <option selected value="English">English</option>
-            <option value="German">German</option>
-          </select>
-          <select class="where">
-            <option selected value="Anywhere">Anywhere</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="United States">United States</option>
-            <option value="Malta">Malta</option>
-            <option value="Canada">Canada</option>
-            <option value="Ireland">Ireland</option>
-            <option value="Australia">German</option>
-          </select>
-          <button type="button" id="search" class="search">
-            Search
-          </button>
+        <form method="POST" id="filter">
+              <button type="button" data-lang="english" class="lang">English</button>
+              <button type="button" data-lang="german" class="lang">German</button>
+              <button type="button" data-lang="spanish" class="lang">Spanish</button>
+              <button type="button" data-lang="all"  class="lang">All</button>
         </form>
       </div>
 
       <div id="content-right" class="items">
 
-        <div class="item" price="499">
-          <div class="item-1">
-            <h2>
-              International House London
-            </h2>
-            <p>
-              London, UK
-            </p>
-            <p id="years-1">
-              From 16 years old
-            </p>
+          <div class="item english spanish" price="499">
+            <div class="item-1">
+              <h2>
+                International House London
+              </h2>
+              <p>
+                London, UK
+              </p>
+              <p id="years-1">
+                English, Spanish
+              </p>
+            </div>
+            <div class="item-2">
+              <h2>
+                From 499$
+              </h2>
+              <p>
+                For 2 weeks
+              </p>
+              <p id="years-2">
+                English, Spanish
+              </p>
+            </div>
+            <form method="POST">
+              <button class="button-item">Choose a course</button>
+            </form>
           </div>
-          <div class="item-2">
-            <h2>
-              From 499$
-            </h2>
-            <p>
-              For 2 weeks
-            </p>
-            <p id="years-2">
-              From 16 years old
-            </p>
-          </div>
-          <form method="POST">
-            <button class="button-item">Choose a course</button>
-          </form>
-        </div>
 
-        <div class="item" price="332">
+        <div class="item spanish" id="tt" price="332">
           <div class="item-1">
             <h2>
-              Twin English Centre London
+              Linguaschools Barcelona
             </h2>
             <p>
-              London, UK
+              Barcelona, Spain
             </p>
             <p id="years-1">
-              From 16 years old
+              Spanish
             </p>
           </div>
           <div class="item-2">
@@ -143,7 +126,7 @@
               For 2 weeks
             </p>
             <p id="years-2">
-              From 16 years old
+              Spanish
             </p>
           </div>
           <form method="POST">
@@ -151,7 +134,7 @@
           </form>
         </div>
 
-        <div class="item" price="439">
+        <div class="item english" price="439">
           <div class="item-1">
             <h2>
               Gateway School of English
@@ -160,7 +143,7 @@
               St. Julian's, Malta
             </p>
             <p id="years-1">
-              From 16 years old
+              English
             </p>
           </div>
           <div class="item-2">
@@ -171,7 +154,7 @@
               For 2 weeks
             </p>
             <p id="years-2">
-              From 16 years old
+              English
             </p>
           </div>
           <form method="POST">
@@ -179,16 +162,16 @@
           </form>
         </div>
 
-        <div class="item" price="748">
+        <div class="item spanish" price="748">
           <div class="item-1">
             <h2>
-              Kings Los Angeles (Hollywood)
+              Linguaschools Granada
             </h2>
             <p>
-              Los Angeles, US
+              Granada, Spain
             </p>
             <p id="years-1">
-              From 16 years old
+              Spanish
             </p>
           </div>
           <div class="item-2">
@@ -199,7 +182,7 @@
               For 2 weeks
             </p>
             <p id="years-2">
-              From 16 years old
+              Spanish
             </p>
           </div>
           <form method="POST">
@@ -207,7 +190,7 @@
           </form>
         </div>
 
-        <div class="item" price="477">
+        <div class="item english" price="477">
           <div class="item-1">
             <h2>
               Twin English Centre Dublin
@@ -216,7 +199,7 @@
               Dublin, Ireland
             </p>
             <p id="years-1">
-              From 16 years old
+              English
             </p>
           </div>
           <div class="item-2">
@@ -227,7 +210,7 @@
               For 2 weeks
             </p>
             <p id="years-2">
-              From 16 years old
+              English
             </p>
           </div>
           <form method="POST">
@@ -235,7 +218,7 @@
           </form>
         </div>
 
-        <div class="item" price="833">
+        <div class="item english" price="833">
           <div class="item-1">
             <h2>
               ILSC Vancouver
@@ -244,7 +227,7 @@
               Vancouver, Canada
             </p>
             <p id="years-1">
-              From 16 years old
+              English
             </p>
           </div>
           <div class="item-2">
@@ -255,7 +238,7 @@
               For 2 weeks
             </p>
             <p id="years-2">
-              From 16 years old
+              English
             </p>
           </div>
           <form method="POST">
@@ -263,16 +246,16 @@
           </form>
         </div>
 
-        <div class="item" price="499">
+        <div class="item german" price="499">
           <div class="item-1">
             <h2>
-              International House London
+              TANDEM Munich
             </h2>
             <p>
-              London, UK
+              Munich, Germany
             </p>
             <p id="years-1">
-              From 16 years old
+              German, English
             </p>
           </div>
           <div class="item-2">
@@ -283,7 +266,7 @@
               For 2 weeks
             </p>
             <p id="years-2">
-              From 16 years old
+              German, English
             </p>
           </div>
           <form method="POST">
@@ -291,8 +274,8 @@
           </form>
         </div>
 
-        <div class="item" price="530">
-          <div class="item-1">
+        <div class="item german english" price="530">
+          <div class="item-1 german">
             <h2>
               FU Academy of Languages Berlin
             </h2>
@@ -300,10 +283,10 @@
               Berlin, Germany
             </p>
             <p id="years-1">
-              From 16 years old
+              German, English
             </p>
           </div>
-          <div class="item-2">
+          <div class="item-2 german">
             <h2>
               From 530$
             </h2>
@@ -311,7 +294,7 @@
               For 2 weeks
             </p>
             <p id="years-2">
-              From 16 years old
+              German, English
             </p>
           </div>
           <form method="POST">
@@ -414,8 +397,9 @@
     menu (document);
     import {sort} from "../src/js//languageCourses/sort.js"
     sort ();
+    import {filter} from "../src/js//languageCourses/filter.js"
+    filter ();
   </script>
-
 
 </body>
 

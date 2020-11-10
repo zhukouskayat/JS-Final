@@ -4,9 +4,7 @@
 
 .sort,
 .search,
-.age,
-.language,
-.where,
+.lang,
 .weeks,
 .button-item {
     font-size: var(--font-size-button);

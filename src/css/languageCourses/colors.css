@@ -3,7 +3,8 @@
 }
 
 #content-left,
-.item {
+.item,
+.lang {
     background-color: white;
 }
 

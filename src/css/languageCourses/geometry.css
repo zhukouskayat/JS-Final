@@ -1,3 +1,7 @@
+#hide {
+  display: none;
+}
+
 #content {
   padding: var(--padding-body);
 }
@@ -56,9 +60,7 @@ h1,
   margin: 30px 0px 20px 0px;
 }
 
-.age,
-.language,
-.where {
+.lang {
   width: var(--button-width);
   height: var(--button-height);
   border: var(--form-border);
@@ -186,10 +188,7 @@ h1,
     margin-bottom: 0px;
   }
 
-  .age,
-  .language,
-  .where,
-  .search {
+  .lang {
     width: 100%;
   }
 
