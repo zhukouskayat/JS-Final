@@ -1,0 +1,28 @@
+#content {
+    background-color: var(--background-color);
+}
+
+#content-left,
+.item {
+    background-color: white;
+}
+
+.search,
+.button-item {
+    color: var(--font-button-color);
+    background-color: var(--background-button-color);
+}
+
+.sort {
+    background-color: white;
+}
+
+.search:hover,
+.button-item:hover {
+    background-color: var(--background-hover-button-color);
+}
+
+.fa-long-arrow-alt-up,
+.fa-long-arrow-alt-down {
+    color: #68BDD1;
+}

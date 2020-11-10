@@ -1,0 +1,27 @@
+#content h1 {
+    font-size: var(--font-size-h1);
+}
+
+.sort,
+.search,
+.age,
+.language,
+.where,
+.weeks,
+.button-item {
+    font-size: var(--font-size-button);
+}
+
+#content-left h2 {
+    font-size: var(--font-size-h2);
+}
+
+#years-1,
+#years-2 {
+    font-size: var(--font-size-p-small);
+}
+
+.item-2 p,
+.item-1 p {
+    font-size: var(--font-size-p-big);
+}
