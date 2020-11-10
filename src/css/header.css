@@ -31,14 +31,15 @@
   color: #59459C;
 }
 
-#header-1 .header-active {
+#header-1 .header-active,
+#menu-items .header-active {
   color: #59459C;
 }
 
 /* Fonts */
 
 .header-active {
-  font-weight: var(--font-weight);
+  font-weight: 500;
 }
 
 #header-1 a,

@@ -26,3 +26,7 @@ font-weight: var(--font-weight);
   font-size: var(--font-size-p-medium);
   text-align: justify;
 }
+
+#numbers {
+  font-weight: var(--font-weight);
+}

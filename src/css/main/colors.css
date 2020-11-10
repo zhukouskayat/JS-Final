@@ -13,6 +13,10 @@
   background-color: var(--background-button-color);
 }
 
+#numbers {
+  color: #E0A47C;
+}
+
 .fa-globe {
   color: #E0A47C;
 }

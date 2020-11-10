@@ -60,8 +60,9 @@ function checkInputs() {
   const em2 = emailValue !== !isEmail(emailValue);
   const pas = passwordValue !== '';
   const pas2 = password2Value !== '';
+  const pasPas = passwordValue === password2Value;
 
-  if(us && em && em2 && pas && pas2) {
+  if(us && em && em2 && pas && pas2 && pasPas) {
     window.location = '../../public/index.html';
   }
 }

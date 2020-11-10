@@ -32,12 +32,12 @@
       <div class="menu-icon"></div>
     </div>
     <div id="menu-items">
-        <a href="languageCourses.html">Language courses</a>
-        <a href="higherEducation.html">Higher Education</a>
-        <a href="onlineEducation.html">Online Education</a>
-        <a href="#">About company</a>
-        <a href="#">Contact us</a>
-        <a href="signUp.html">Sign up <i class="fas fa-user"></i></a>
+      <a href="languageCourses.html">Language courses</a>
+      <a href="higherEducation.html">Higher Education</a>
+      <a href="onlineEducation.html">Online Education</a>
+      <a href="#">About company</a>
+      <a href="#">Contact us</a>
+      <a href="signUp.html">Sign up <i class="fas fa-user"></i></a>
     </div>
   </div>
 
@@ -69,9 +69,9 @@
 
     <div id="book">
       <h1>
-        Search and book English courses abroad!
+        Search and book English courses abroad! Need help? Request a call back!
       </h1>
-      <form method="POST">
+      <!-- <form method="POST">
         <select>
           <option selected value="English">English</option>
           <option value="Spanish">Spanish</option>
@@ -103,12 +103,12 @@
         <button type="button">
           Search
         </button>
-      </form>
+      </form> -->
       <div>
         <div class="text-col1">
           <p>
             <i class="fas fa-globe"></i>
-            Over 2,500 language courses worldwide
+            Over <span id="numbers"> 2,500 </span> language courses worldwide
           </p>
           <p>
             <i class="fas fa-headset"></i>
@@ -158,7 +158,7 @@
         <form method="POST" id="email">
           <input type="email" placeholder="Email..." class="email">
           <button>
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope popup-link" id="myBtn"></i>
           </button>
           </input>
         </form>
@@ -229,12 +229,29 @@
         </div>
       </div>
     </div>
+  </div>
 
+  <div id="popup" class="popup">
+    <div class="popup-body">
+      <div class="popup-content">
+        <a href="" class="popup-close close-popup">
+          <i class="fas fa-times"></i>
+        </a>
+        <div class="popup-title">Thanks for being part of the community!</div>
+        <div class="popup-text">To show how much we appreciate you, here is a 10% discount code for your next book a
+          course: <span>LINGUA2020</span> </div>
+      </div>
+    </div>
   </div>
 
   <script type="module">
+    import {popup} from "../src/js/popup.js"
+    popup();
     import {menu} from "../src/js/menu.js"
     menu (document);
+    import {outNum} from "../src/js/mainPage/numbers.js"
+    outNum ();
+
   </script>
 
 </body>
