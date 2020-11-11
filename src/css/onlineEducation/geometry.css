@@ -1,0 +1,102 @@
+#banner1,
+#banner2,
+#banner3 {
+  padding: var(--padding-body);
+}
+
+#banner1,
+#banner3,
+#banner2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#banner1>div,
+#banner2>div,
+#banner3>div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#banner1 img,
+#banner2 img,
+#banner3 img {
+  margin: 50px 0px;
+}
+
+#banner1 h1,
+#banner2 h1,
+#banner3 h1 {
+  margin-top: var(--margin-top-h1);
+  margin-bottom: 30px;
+}
+
+ #banner1 form>button,
+ #banner2 form>button,
+ #banner3 form>button {
+  position: absolute;
+  bottom: 50px;
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--button-border-radius);
+}
+
+#banner1>div:last-child {
+  margin: 50px 0px 50px auto;
+}
+
+.small {
+  margin-top: 15px;
+}
+
+span {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+
+  #banner1,
+  #banner2,
+  #banner3 {
+    padding: 0px 100px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  #banner1>div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #banner1 img,
+  #banner2 img,
+  #banner3 img
+   {
+    display: none;
+  }
+
+  #banner1 form>button,
+  #banner2 form>button,
+  #banner3 form>button {
+    position: static;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #banner1,
+  #banner2,
+  #banner3 {
+    padding: 0px 50px;
+  }
+
+  #banner1 form>button,
+  #banner2 form>button,
+  #banner3 form>button {
+    width: 100%;
+  }
+}

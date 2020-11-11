@@ -1,0 +1,19 @@
+#banner1,
+#banner3 {
+  background-color: var(--background-color);
+}
+
+#banner1 button,
+#banner2 button,
+#banner3 button {
+  color: var(--font-button-color);
+  background-color: var(--background-button-color);
+}
+
+
+#banner1 button:hover,
+#banner2 button:hover,
+#banner3 button:hover {
+  cursor: pointer;
+  background-color: var(--background-hover-button-color);
+}

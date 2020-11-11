@@ -1,0 +1,14 @@
+#banner,
+#info {
+  background-color: var(--background-color);
+}
+
+#banner button {
+  color: var(--font-button-color);
+  background-color: var(--background-button-color);
+}
+
+#banner button:hover {
+  cursor: pointer;
+  background-color: var(--background-hover-button-color);
+}

@@ -26,6 +26,9 @@
 }
 
 .fa-long-arrow-alt-up,
+.fa-long-arrow-alt-down {
+    color: #68BDD1;
+}
 
 .lang:hover {
     background-color: #68BDD1;

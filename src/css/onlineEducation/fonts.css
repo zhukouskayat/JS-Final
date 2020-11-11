@@ -1,0 +1,18 @@
+h1 {
+    font-size: var(--font-size-h1);
+  }
+  
+#banner1 p,
+#banner2 p,
+#banner3 p {
+    font-size: var(--font-size-p-big);
+  }
+  
+ button {
+    font-size: var(--font-size-button);
+  }
+
+  
+.small span {
+    font-size: var(--font-size-p-small);
+  }

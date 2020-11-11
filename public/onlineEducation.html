@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/fonts/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../src/css/reset.css" />
+  <link rel="stylesheet" href="../src/css/root.css" />
+  <link rel="stylesheet" href="../src/css/onlineEducation/geometry.css" />
+  <link rel="stylesheet" href="../src/css/onlineEducation/colors.css" />
+  <link rel="stylesheet" href="../src/css/onlineEducation/fonts.css" />
+  <link rel="stylesheet" href="../src/css/header.css" />
+  <link rel="stylesheet" href="../src/css/subscribe.css" />
+  <link rel="stylesheet" href="../src/css/footer.css" />
+  <title>LinguaLand</title>
+</head>
+
+<body>
+
+  <div id="header">
+    <div id="header-1">
+      <a href="index.html"><img id="logo" src="../src/illustrations/logo.svg" alt="logo" /></a>
+      <a href="languageCourses.html">Language courses</a>
+      <a href="higherEducation.html">Higher Education</a>
+      <a href="onlineEducation.html" class="header-active">Online Education</a>
+      <a href="signUp.html">Sign up <i class="fas fa-user"></i></a>
+    </div>
+    <div id="header-2">
+      <a href="index.html"><img id="logo" src="../src/illustrations/logo.svg" alt="logo" /></a>
+      <div class="menu-icon"></div>
+    </div>
+    <div id="menu-items">
+      <a href="languageCourses.html">Language courses</a>
+      <a href=" higherEducation.html">Higher Education</a>
+      <a href="onlineEducation.html" class="header-active">Online Education</a>
+      <a href="#">About company</a>
+      <a href="#">Contact us</a>
+      <a href="signUp.html">Sign up <i class="fas fa-user"></i></a>
+    </div>
+  </div>
+
+
+  <div id="banner1">
+    <div>
+      <div>
+        <h1>
+          Marathon from Beginner to Elementary
+        </h1>
+        <p>
+          Work through two levels in 30 days
+        </p>
+        <p class="small">
+          <span>Starts on: 8/14/2021</span>
+          <span>Lessons: 30</span>
+          <span>Price: from 99$</span>
+        </p>
+      </div>
+      <div>
+        <img src="../src/illustrations/online-1.svg" alt="banner illustration">
+      </div>
+    </div>
+    <form method="post">
+      <button type="button">
+        Learn more
+      </button>
+    </form>
+  </div>
+
+  <div id="banner2">
+    <div>
+      <div>
+        <h1>
+          Marathon from Elementary to Intermediate
+        </h1>
+        <p>
+          Work through two levels in 30 days
+        </p>
+        <p class="small">
+          <span>Starts on: 1/22/2021</span>
+          <span>Lessons: 30</span>
+          <span>Price: from 99$</span>
+        </p>
+      </div>
+      <div>
+        <img src="../src/illustrations/online-2.svg" alt="banner illustration">
+      </div>
+    </div>
+    <form method="post">
+      <button type="button">
+        Find more
+      </button>
+    </form>
+  </div>
+
+  <div id="banner3">
+    <div>
+      <div>
+        <h1>
+          Marathon from  Intermediate to Advanced
+        </h1>
+        <p>
+          Work through two levels in 30 days
+        </p>
+        <p class="small">
+          <span>Starts on: 3/01/2021</span>
+          <span>Lessons: 30</span>
+          <span>Price: from 99$</span>
+        </p>
+      </div>
+      <div>
+        <img src="../src/illustrations/online-3.svg" alt="banner illustration">
+      </div>
+    </div>
+    <form method="post">
+      <button type="button">
+        Find more
+      </button>
+    </form>
+  </div>
+
+
+
+
+
+  <div id="subscribe">
+    <img src="../src/illustrations/subscribeBoy.svg" alt="subscribe illustration" class="boy-ill">
+    <div>
+      <h1>
+        Subscribe!
+      </h1>
+      <form method="POST" id="email">
+        <input type="email" placeholder="Email..." class="email">
+        <button>
+          <i class="fas fa-envelope"></i>
+        </button>
+        </input>
+      </form>
+      <p>
+        We send short, useful advice on how to learn English every week
+      </p>
+    </div>
+    <img src="../src/illustrations/subscribeGirl.svg" alt="subscribe illustration" class="girl-ill">
+  </div>
+
+  <div id="footer">
+    <div id="footer-col">
+      <div class="footer-col1">
+        <h3>
+          LinguaLand
+        </h3>
+        <p>
+          About company
+        </p>
+        <p>
+          Contact us
+        </p>
+        <p>
+          Affiliate program
+        </p>
+      </div>
+      <div class="footer-col2">
+        <h3>
+          For student
+        </h3>
+        <p>
+          My account
+        </p>
+      </div>
+      <div class="footer-col3">
+        <form method="POST">
+          <select name="language">
+            <option selected value="English">English</option>
+            <option value="Russian">Spanish</option>
+            <option value="Italian">Italian</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+          </select>
+          <br>
+          <select name="currency">
+            <option selected value="Dollar">U.S. dollar</option>
+            <option value="Euro">Euro</option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <div class="footer-row">
+      <div>
+        <span>
+          LinguaLand.com 611 Gateway Blvd, South San Francisco, CA 94080, USA
+        </span>
+      </div>
+      <div>
+        <span>
+          Sitemap
+        </span>
+        <span>
+          Privacy policy
+        </span>
+        <span>
+          Terms of use
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="module">
+    import {menu} from "../src/js/menu.js"
+        menu (document);
+    </script>
+</body>

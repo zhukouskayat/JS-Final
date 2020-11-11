@@ -1,0 +1,30 @@
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+#banner p {
+  font-size: var(--font-size-p-big);
+}
+
+#banner button,
+input {
+  font-size: var(--font-size-button);
+}
+
+#info {
+  text-align: justify;
+}
+
+.main {
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+}
+
+#info p,
+li {
+  font-size: var(--font-size-p-big);
+}
+
+#small span {
+  font-size: var(--font-size-p-small);
+}

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../src/css/header.css" />
   <link rel="stylesheet" href="../src/css/subscribe.css" />
   <link rel="stylesheet" href="../src/css/footer.css" />
+  <link rel="stylesheet" href="../src/css/popup.css" />
   <title>LinguaLand</title>
 </head>
 
@@ -69,41 +70,13 @@
 
     <div id="book">
       <h1>
-        Search and book English courses abroad! Need help? Request a call back!
+        Search and book English courses abroad! Need help? Request call back!
       </h1>
-      <!-- <form method="POST">
-        <select>
-          <option selected value="English">English</option>
-          <option value="Spanish">Spanish</option>
-          <option value="Italian">Italian</option>
-          <option value="French">French</option>
-          <option value="German">German</option>
-        </select>
-        <select>
-          <option selected value="2 weeks">For 2 weeks</option>
-          <option value="3 weeks">For 3 weeks</option>
-          <option value="4 weeks">For 4 weeks</option>
-          <option value="5 weeks">For 5 weeks</option>
-          <option value="6 weeks">For 6 weeks</option>
-          <option value="3 months">For 3 months</option>
-          <option value="4 months">For 4 months</option>
-          <option value="5 months">For 5 months</option>
-          <option value="6 months">For 6 months</option>
-          <option value="1 year">For 1 year</option>
-        </select>
-        <select>
-          <option selected value="Anywhere">Anywhere</option>
-          <option value="United Kingdom">United Kingdom</option>
-          <option value="United States">United States</option>
-          <option value="Malta">Malta</option>
-          <option value="Canada">Canada</option>
-          <option value="Ireland">Ireland</option>
-          <option value="Australia">Australia</option>
-        </select>
-        <button type="button">
-          Search
+      <form method="POST">
+        <button type="button" class='popup-link'>
+          Request call back
         </button>
-      </form> -->
+      </form>
       <div>
         <div class="text-col1">
           <p>
@@ -157,8 +130,8 @@
         </h1>
         <form method="POST" id="email">
           <input type="email" placeholder="Email..." class="email">
-          <button>
-            <i class="fas fa-envelope popup-link" id="myBtn"></i>
+          <button type="submit">
+            <i class="fas fa-envelope" id="myBtn"></i>
           </button>
           </input>
         </form>
@@ -237,15 +210,21 @@
         <a href="" class="popup-close close-popup">
           <i class="fas fa-times"></i>
         </a>
-        <div class="popup-title">Thanks for being part of the community!</div>
-        <div class="popup-text">To show how much we appreciate you, here is a 10% discount code for your next book a
-          course: <span>LINGUA2020</span> </div>
+        <div class="popup-title">Thanks for request!</div>
+        <form method="POST" id="modal">
+          <input placeholder="First name" class="fn">
+          <input placeholder="Last name" class="ln">
+          <input placeholder="Email" class="em">
+          <button type="reset" class='request'>
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   </div>
 
   <script type="module">
-    import {popup} from "../src/js/popup.js"
+    import {popup} from "../src/js/mainPage/popup.js"
     popup();
     import {menu} from "../src/js/menu.js"
     menu (document);
