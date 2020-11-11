@@ -101,4 +101,8 @@
   #modal>input {
     padding: 0px;
   }
+
+  .popup-content {
+    max-width: 85%;
+  }
 }
