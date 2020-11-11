@@ -62,7 +62,7 @@ function checkInputs() {
   const pasPas = passwordValue === password2Value;
 
   if(us && em && em2 && pas && pas2 && pasPas) {
-    window.location = '../../../../JS-Final/public/index.html';
+    window.location = '../../../public/index.html';
   }
 }
 
